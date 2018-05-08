@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C10EA37220A209AF00E87041 /* Constantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10EA37120A209AF00E87041 /* Constantes.swift */; };
+		C10EA37420A2115800E87041 /* ImagePickerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10EA37320A2115800E87041 /* ImagePickerExtension.swift */; };
 		C14F970C20A1DE57003226A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14F970B20A1DE57003226A1 /* AppDelegate.swift */; };
 		C14F971120A1DE57003226A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14F970F20A1DE57003226A1 /* Main.storyboard */; };
 		C14F971420A1DE57003226A1 /* contact.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C14F971220A1DE57003226A1 /* contact.xcdatamodeld */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		C10EA37120A209AF00E87041 /* Constantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constantes.swift; sourceTree = "<group>"; };
+		C10EA37320A2115800E87041 /* ImagePickerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerExtension.swift; sourceTree = "<group>"; };
 		C14F970820A1DE57003226A1 /* contact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = contact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14F970B20A1DE57003226A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C14F971020A1DE57003226A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			children = (
 				C14F972420A1DFD0003226A1 /* AddController.swift */,
 				C14F972B20A1ED39003226A1 /* PickerViewExtension.swift */,
+				C10EA37320A2115800E87041 /* ImagePickerExtension.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				C14F972A20A1E9D5003226A1 /* ButtonRounded.swift in Sources */,
 				C14F972520A1DFD0003226A1 /* AddController.swift in Sources */,
 				C14F972C20A1ED39003226A1 /* PickerViewExtension.swift in Sources */,
+				C10EA37420A2115800E87041 /* ImagePickerExtension.swift in Sources */,
 				C14F972820A1E89B003226A1 /* ImageRounded.swift in Sources */,
 				C14F971420A1DE57003226A1 /* contact.xcdatamodeld in Sources */,
 				C10EA37220A209AF00E87041 /* Constantes.swift in Sources */,

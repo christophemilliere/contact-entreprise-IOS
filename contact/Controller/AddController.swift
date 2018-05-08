@@ -25,9 +25,12 @@ class AddController: UIViewController {
     @IBOutlet weak var widthConstant: NSLayoutConstraint!
     
     var companies = [Company]()
+    var imagePicker: UIImagePickerController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupImagePicker()
         setupPicker()
         fetchCompanies()
         
