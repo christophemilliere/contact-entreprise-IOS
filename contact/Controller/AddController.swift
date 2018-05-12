@@ -30,6 +30,8 @@ class AddController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupNotification()
+        setupTextField()
         setupImagePicker()
         setupPicker()
         fetchCompanies()
@@ -82,6 +84,29 @@ class AddController: UIViewController {
     }
     
     @IBAction func addPersonalAction(_ sender: Any) {
+        view.endEditing(true)
+        let newPersonn = Personn(context: context!)
+        
+        if firstname.text != nil {
+            newPersonn.firstname = firstname.text!
+        }
+        
+        if lastname.text != nil {
+            newPersonn.lastname = lastname.text!
+        }
+        
+        if email.text != nil {
+            newPersonn.email = email.text!
+        }
+        
+        if let phone = phone.text, let phoneInt = Int32(phone) {
+            newPersonn.phone = phoneInt
+        }
+        newPersonn.photo = picture.image
+        newPersonn.employer = companies[pickerView.selectedRow(inComponent: 0)]
+        
+        appDelegate?.saveContext()
+        navigationController?.popViewController(animated: true)
     }
     
 
